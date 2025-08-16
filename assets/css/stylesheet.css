@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+
+header a {
+  padding: 1rem;
+}
+
 main {
   flex: 1;
   padding: 3rem;
@@ -62,6 +67,14 @@ main {
 
 /* タブレット向けレイアウト */
 @media (max-width: 1000px) {
+  main {
+    padding: 2rem;
+  }
+
+  p {
+    text-align: left;
+  }
+
   .contents ul {
     flex-wrap: wrap;
   }

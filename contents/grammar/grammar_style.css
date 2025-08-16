@@ -1,0 +1,77 @@
+.index-warpper {
+    margin: 2rem auto;
+    text-align: center;
+    width: 20rem;
+}
+
+
+.index-list {
+    text-align: left;
+    list-style: none;
+
+}
+
+
+.cards {
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+}
+
+.card {
+    padding: 0 2rem 2rem 2rem;
+    border-top: 3px solid gray;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 4px silver;
+}
+
+.card p {
+    text-align: left;
+}
+
+.card table {
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-collapse: collapse;
+}
+
+.card th {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: gray;
+    border: solid 2px gray;
+}
+
+.card tr {
+    padding: 0 1rem;
+    border: solid 2px gray;
+}
+
+.ok-check {
+    margin: 2rem 0 0 0;    
+}
+
+.ok-check label {
+    align-items: center;
+    color: gray;
+    max-width: 200px;
+    padding: 0.5rem 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ok-check label:has(:checked) {
+    background-color: gray;
+    color: white;
+}
+
+.ok-check input {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        width: 100%;
+    }
+}
