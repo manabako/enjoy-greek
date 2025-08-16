@@ -2,6 +2,106 @@
   box-sizing: border-box;
 }
 
+body, html {
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
-  margin: 50px;
+  flex: 1;
+  padding: 3rem;
+}
+
+.main-area {
+  text-align: center;
+}
+
+.main-area h1 {
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid silver;
+}
+
+.contents ul {
+  display: flex;
+  list-style: none;
+  padding: 60px 0px;
+  gap: 1rem;
+}
+
+.contents li {
+  height: 100px;
+  line-height: 100px;
+  flex: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 30%;
+  display: inline;
+}
+
+.contents a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-size: 2rem;
+}
+
+.contents a:hover{
+  color: gray;
+}
+
+.contents li:hover{
+  color: gray;
+  border: 2px solid gray;
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .contents ul {
+    flex-wrap: wrap;
+  }
+  .contents li {
+    width: 30%;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+  h1 {
+    text-align: left;
+  }
+
+  .contents ul {
+    flex-direction: column;
+  }
+  
+  .contents li {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+}
+
+
+footer {
+  height: 4rem;
+  padding: 0 3rem;
+}
+
+.foot-container {
+  float: right;
+}
+
+footer a {
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+
 }
