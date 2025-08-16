@@ -30,8 +30,7 @@
 }
 
 .card table {
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: 2rem auto;
     border-collapse: collapse;
 }
 
@@ -43,9 +42,13 @@
 }
 
 .card tr {
-    padding: 0 1rem;
     border: solid 2px gray;
 }
+
+.card td {
+    padding: 0 1.5rem;
+}
+
 
 .ok-check {
     margin: 2rem 0 0 0;    

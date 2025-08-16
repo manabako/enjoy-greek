@@ -13,9 +13,14 @@ body {
   flex-direction: column;
 }
 
+header {
+  background-color: black;
+  padding: 1rem;
+}
 
 header a {
-  padding: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -43,10 +48,11 @@ main {
   height: 100px;
   line-height: 100px;
   flex: auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 10px;
   width: 30%;
   display: inline;
+  box-shadow: 0 0 4px gray;
 }
 
 .contents a {
@@ -62,7 +68,8 @@ main {
 
 .contents li:hover{
   color: gray;
-  border: 2px solid gray;
+  border: 2px solid silver;
+  box-shadow: 0 0 0;
 }
 
 /* タブレット向けレイアウト */
@@ -85,6 +92,10 @@ main {
 
 /* スマホ向けレイアウト */
 @media (max-width: 670px) {
+  main {
+    padding: 1rem;
+  }
+
   h1 {
     text-align: left;
   }
