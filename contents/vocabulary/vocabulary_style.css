@@ -1,0 +1,54 @@
+/* 問題表示部分 */
+.question {
+    font-size: 3rem;
+    margin: 5rem;
+    border: 1px solid black;
+}
+
+/* ボタンの共通スタイル */
+/* .answers {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 20rem);
+} */
+
+.contents ul {
+    display: flex;
+    padding: 60px 0px;
+    gap: 1rem;
+}
+
+.answers button {
+    flex: auto;
+    width: 40%;
+    padding: 1rem;
+    margin: 4px;
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answers button:hover {
+    background-color: #f0f0f0;
+}
+
+/* .answers button:nth-child(5) {
+    grid-column: span 2; 
+    width: 50%;
+    justify-self: center;
+} */
+
+/* 幅670px以下の場合（縦並び） */
+@media (max-width: 670px) {
+    /* .answers {
+    grid-template-columns: 1fr;
+    } */
+    .answers button {
+    width: 100%;
+    }
+}
