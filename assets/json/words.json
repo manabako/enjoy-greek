@@ -1,0 +1,38 @@
+[
+    {
+        "id":"a00001",
+        "lemma": "λόγος",
+        "meaning": ["言葉", "語り", "演説"],
+        "group": "noun-a"
+    },
+    {
+        "id": "a00002", 
+        "lemma": "ἀγάπη",
+        "meaning": ["愛", "仁愛"],
+        "group": "noun-a"
+    },
+    {
+        "id": "a00003",
+        "lemma": "ἀδίκημα",
+        "meaning": ["害", "悪事"],
+        "group": "noun-a"
+    },
+    {
+        "id": "a00004",
+        "lemma": "θάλαττα",
+        "meaning": ["海"],
+        "group": "noun-a"
+    },
+    {
+        "id": "a00005",
+        "lemma": "θνητός",
+        "meaning": ["死すべき"],
+        "group": "adj"
+    },
+    {
+        "id": "a00006",
+        "lemma": "ἡχώ",
+        "meaning": ["反響", "木魂"],
+        "group": "noun-a"
+    }
+]
