@@ -31,18 +31,20 @@
 
 .card table {
     margin: 2rem auto;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-bottom: 2px solid gray;
 }
 
 .card th {
     padding: 0.5rem 1rem;
     color: white;
     background-color: gray;
-    border: solid 2px gray;
+    /* border: solid 2px gray; */
 }
 
 .card tr {
-    border: solid 2px gray;
+    /* border: solid 2px gray; */
+    background-color: #f9f9f9;
 }
 
 .card td {
