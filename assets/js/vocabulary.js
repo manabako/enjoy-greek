@@ -1,3 +1,9 @@
+// URLパラメータからJSONファイル名を取得する関数
+function getJsonFileName() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("data") || "words"; // デフォルトをgreek.jsonに
+}
+
 let wordData = []; // JSON全体を保持
 let correctAnswer = null; // 正解の意味
 let isAnswerIncluded = true; // 今回の問題で正解が含まれるかどうか
@@ -7,7 +13,8 @@ let correctQuestions = 0;    // 正解数
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         // JSONデータを取得
-        const response = await fetch("../../assets/json/words.json");
+        const jsonFile = getJsonFileName(); // URLパラメータから取得
+        const response = await fetch(`../../assets/json/${jsonFile}.json`);
         wordData = await response.json();
 
         setNewQuestion();
