@@ -15,8 +15,13 @@ body {
 }
 
 header {
+  font-family: sans-serif;
   background-color: black;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  position: fixed;
+  top: 1;
+  z-index: 10;
 }
 
 header a {
@@ -24,9 +29,15 @@ header a {
   text-decoration: none;
 }
 
+header a::after{
+  content: "|";
+  padding: 0 0.5rem;
+}
+
 main {
   flex: 1;
   padding: 3rem;
+  margin-top: 2rem;
 }
 
 .main-area {

@@ -59,6 +59,11 @@
     padding-bottom: 0.5rem;
 }
 
+.card ol li::marker {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 .ok-check {
     margin: 2rem 0 0 0;    
 }
@@ -89,7 +94,18 @@
 }
 
 @media (max-width: 670px) {
-    .card table {
+
+    .card {
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    table {
         width: 100%;
+        margin: 0;
     }
 }
