@@ -1,0 +1,20 @@
+
+
+.list li {
+    list-style: none;
+    height: 100px;
+    line-height: 100px;
+    flex: auto;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 30%;
+    /* display: inline; */
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+    margin: 1rem auto;
+    cursor : pointer;
+}
+
+.sortable-ghost {
+  opacity: 0;
+}
