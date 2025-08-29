@@ -1,38 +1,273 @@
 [
     {
-        "id":"a00001",
-        "lemma": "λόγος",
-        "meaning": ["言葉", "語り", "演説"],
-        "group": "noun-a"
+        "id":"B00001",
+        "lemma":"ὁ",
+        "meaning":[
+            "その (冠詞)"
+        ],
+        "group":"art"
     },
     {
-        "id": "a00002", 
-        "lemma": "ἀγάπη",
-        "meaning": ["愛", "仁愛"],
-        "group": "noun-a"
+        "id":"B00002",
+        "lemma":"δέ",
+        "meaning":[
+            "だが",
+            "そして",
+            "他方で"
+        ],
+        "group":"dp"
     },
     {
-        "id": "a00003",
-        "lemma": "ἀδίκημα",
-        "meaning": ["害", "悪事"],
-        "group": "noun-a"
+        "id":"B00003",
+        "lemma":"εἰμί",
+        "meaning":[
+            "在る",
+            "である"
+        ],
+        "group":"v"
     },
     {
-        "id": "a00004",
-        "lemma": "θάλαττα",
-        "meaning": ["海"],
-        "group": "noun-a"
+        "id":"B00004",
+        "lemma":"οὗτος",
+        "meaning":[
+            "それ",
+            "その"
+        ],
+        "group":"det"
     },
     {
-        "id": "a00005",
-        "lemma": "θνητός",
-        "meaning": ["死すべき"],
-        "group": "adj"
+        "id":"B00005",
+        "lemma":"αὐτός",
+        "meaning":[
+            "自身",
+            "同じ",
+            "彼",
+            "彼女"
+        ],
+        "group":"pron"
     },
     {
-        "id": "a00006",
-        "lemma": "ἡχώ",
-        "meaning": ["反響", "木魂"],
-        "group": "noun-a"
+        "id":"B00006",
+        "lemma":"ὅς",
+        "meaning":[
+            "(関係代名詞)"
+        ],
+        "group":"rel"
+    },
+    {
+        "id":"B00007",
+        "lemma":"καί",
+        "meaning":[
+            "と",
+            "そして",
+            "また"
+        ],
+        "group":"cnj"
+    },
+    {
+        "id":"B00008",
+        "lemma":"μέν",
+        "meaning":[
+            "一方で"
+        ],
+        "group":"dp"
+    },
+    {
+        "id":"B00009",
+        "lemma":"τίς",
+        "meaning":[
+            "誰"
+        ],
+        "group":"int"
+    },
+    {
+        "id":"B00010",
+        "lemma":"σύ",
+        "meaning":[
+            "君",
+            "貴方"
+        ],
+        "group":"pers"
+    },
+    {
+        "id":"B00011",
+        "lemma":"γάρ",
+        "meaning":[
+            "というのも"
+        ],
+        "group":"dp"
+    },
+    {
+        "id":"B00012",
+        "lemma":"ἐγώ",
+        "meaning":[
+            "私"
+        ],
+        "group":"pers"
+    },
+    {
+        "id":"B00013",
+        "lemma":"τις",
+        "meaning":[
+            "誰か"
+        ],
+        "group":"pron"
+    },
+    {
+        "id":"B00014",
+        "lemma":"εἰς",
+        "meaning":[
+            "の中へ"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00015",
+        "lemma":"πρός",
+        "meaning":[
+            "の側に",
+            "の方へ"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00016",
+        "lemma":"τε",
+        "meaning":[
+            "と",
+            "そして",
+            "また"
+        ],
+        "group":"dp"
+    },
+    {
+        "id":"B00017",
+        "lemma":"γίγνομαι",
+        "meaning":[
+            "成る",
+            "生じる"
+        ],
+        "group":"v"
+    },
+    {
+        "id":"B00018",
+        "lemma":"ἄλλος",
+        "meaning":[
+            "他の",
+            "もう一つの"
+        ],
+        "group":"adj"
+    },
+    {
+        "id":"B00019",
+        "lemma":"περί",
+        "meaning":[
+            "の周りに",
+            "について"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00020",
+        "lemma":"ἐκ",
+        "meaning":[
+            "の中から"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00021",
+        "lemma":"γε",
+        "meaning":[
+            "少なくとも",
+            "とくかく"
+        ],
+        "group":"dp"
+    },
+    {
+        "id":"B00022",
+        "lemma":"πολύς",
+        "meaning":[
+            "多くの"
+        ],
+        "group":"adj"
+    },
+    {
+        "id":"B00023",
+        "lemma":"φημί",
+        "meaning":[
+            "言う",
+            "語る"
+        ],
+        "group":"v"
+    },
+    {
+        "id":"B00024",
+        "lemma":"οὖν",
+        "meaning":[
+            "実際",
+            "確かに"
+        ],
+        "group":"dp"
+    },
+    {
+        "id":"B00025",
+        "lemma":"ἐν",
+        "meaning":[
+            "の中で"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00026",
+        "lemma":"ὅδε",
+        "meaning":[
+            "これ",
+            "この"
+        ],
+        "group":"det"
+    },
+    {
+        "id":"B00027",
+        "lemma":"ὑπό",
+        "meaning":[
+            "の下から",
+            "の下で",
+            "の下へ"
+        ],
+        "group":"prep"
+    },
+    {
+        "id":"B00028",
+        "lemma":"ποιέω",
+        "meaning":[
+            "作る",
+            "為す"
+        ],
+        "group":"v"
+    },
+    {
+        "id":"B00029",
+        "lemma":"ἐάν",
+        "meaning":[
+            "もし"
+        ],
+        "group":"cnj"
+    },
+    {
+        "id":"B00030",
+        "lemma":"οὕτως",
+        "meaning":[
+            "その様に"
+        ],
+        "group":"adv"
+    },
+    {
+        "id":"B00031",
+        "lemma":"εἶμι",
+        "meaning":[
+            "行く"
+        ],
+        "group":"v"
     }
 ]
