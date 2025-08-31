@@ -11,23 +11,16 @@
   <body>
     <header>
         <a href="../../index.html">TOP</a>
+        <a href="./index.html">戻る</a>
     </header>
     <main>
         <div class="main-area">
-            <h1>背景知識</h1>
-            <p>歴史上の出来事の起こった順序を学びます．</p>
-            <div class="contents">
-                <ul>
-                <li><a href="./0001history.html">始める</a></li>
-                </ul>
-            </div>
-            <details>
-              <summary>使用方法</summary>
-              <p>出来事が4つ並んでいます．</p>
-              <p>クリック・ドラッグで古い順に並び替えてください．</p>
-              <p>回答ボタンを押して正解を確認してください．</p>
-              <p>次へボタンで次の問題を表示してください．</p>
-            </details>
+            <h1>歴史上の出来語を学ぶ</h1>
+            <p>歴史上の出来事を古い順に並べてください</p>
+            <ul id="list" class="list"></ul>
+            <button id="answerBtn" class="btn">回答</button>
+            <button id="nextBtn" class="btn">次へ</button>
+            <div class="result"></div>
         </div>
     </main>
     <footer>
@@ -35,5 +28,7 @@
         <p><a href="https://github.com/manabako"><i class="fa-brands fa-github"></i> manabako</a></p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script src="../../assets/js/background.js"></script>
   </body>
 </html>

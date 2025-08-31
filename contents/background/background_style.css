@@ -1,20 +1,86 @@
 
+.list {
+    padding: 0;
+}
 
 .list li {
     list-style: none;
-    height: 100px;
-    line-height: 100px;
     flex: auto;
-    /* border: 2px solid black; */
     border-radius: 10px;
-    width: 30%;
-    /* display: inline; */
+    width: 50%;
     background-color: white;
     box-shadow: 0 0 4px gray;
     margin: 1rem auto;
+    padding: 1rem 0.5rem;
     cursor : pointer;
+    display: flex;
 }
+
+.updown-marker {
+  flex: 0 0 auto;    /* 固定幅（縮まない） */
+  width: 4rem;       /* 年のエリアの幅を決める */
+  text-align: left;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: gray;
+
+}
+
+.year {
+  display: none;
+}
+
+.event {
+  flex: 1;           /* 残りのスペースを使う */
+  text-align: center; /* 中央寄せ */
+}
+
+.btn {
+    flex: auto;
+    width: 20%;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#nextBtn {
+  display: none;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
 
 .sortable-ghost {
   opacity: 0;
+}
+
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .list li {
+    width: 70%;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+  .list li {
+    width: 100%;
+  }
+
+  .btn {
+    width: 50%;
+  }  
 }
