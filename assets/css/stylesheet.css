@@ -16,12 +16,16 @@ body {
 
 header {
   font-family: sans-serif;
+  color: white;
   background-color: black;
   padding: 0.5rem 1rem;
   width: 100%;
   position: fixed;
   top: 1;
   z-index: 10;
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;            /* 垂直方向の中央揃え */
 }
 
 header a {
@@ -32,6 +36,10 @@ header a {
 header a::after{
   content: "|";
   padding: 0 0.5rem;
+}
+
+header p {
+  margin: 0 0.5rem;
 }
 
 main {
