@@ -1,3 +1,12 @@
+const countDisplay = document.getElementById('checked-count');
+
+function updateCheckedCount() {
+    const checkerCount = document.querySelectorAll('.ok-check').length;
+    const checkedCount = document.querySelectorAll('.ok-check input[type="checkbox"]:checked').length;
+    countDisplay.textContent = `このページの進捗: ${checkedCount} / ${checkerCount}`;
+}
+
+
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("card-container");
 
@@ -49,4 +58,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error(error);
         container.textContent = "読み込みエラーが発生しました。";
     }
+
+    // チェックボックスのチェック数確認
+    // チェックボックスのイベント登録は input にする
+    container.addEventListener('change', (event) => {
+        if (event.target.matches('.ok-check input[type="checkbox"]')) {
+            updateCheckedCount();
+        }
+    });
+    // 初期表示
+    updateCheckedCount();
 });
