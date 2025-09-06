@@ -15,12 +15,20 @@
     </header>
     <main>
         <div class="main-area">
-            <h1>歴史上の出来語を学ぶ</h1>
+            <h1>歴史を学ぶ</h1>
             <p>歴史上の出来事を古い順に並べてください</p>
             <ul id="list" class="list"></ul>
             <button id="answerBtn" class="btn">回答</button>
+            <button id="notesBtn" class="btn">解説</button>
             <button id="nextBtn" class="btn">次へ</button>
             <div class="result"></div>
+        </div>
+        <!-- ポップアップ -->
+        <div id="popupOverlay" class="popup-overlay">
+          <div class="popup" id="popup">
+            <div id="popupContainer"></div>
+            <button id="closeBtn">閉じる</button>
+          </div>
         </div>
     </main>
     <footer>
