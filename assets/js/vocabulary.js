@@ -21,6 +21,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
         console.error("JSON読み込みエラー:", error);
     }
+
+    // 不正解時に表示させるポップアップの初期設定
+    const popup = document.getElementById("popupOverlay");
+    const closeBtn = document.getElementById("closeBtn");
+
+    closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+        setNewQuestion(); // 閉じたら次の問題へ
+    });
 });
 
 function updateScore() {
@@ -80,24 +89,66 @@ function setNewQuestion() {
 }
 
 
+// function checkAnswer(selected) {
+//     if (!isAnswerIncluded) {
+//         alert(`不正解！ 今回の正解は選択肢にありませんでした。\n正解: ${correctAnswer}`);
+//     } else if (selected === correctAnswer) {
+//         alert("正解！");
+//         correctQuestions++;
+//     } else {
+//         alert(`不正解！ 正解は「${correctAnswer}」でした。`);
+//     }
+//     setNewQuestion();
+// }
+
+// function checkNoneButton() {
+//     if (isAnswerIncluded) {
+//         alert(`不正解！ 正解は「${correctAnswer}」でした。`);
+//     } else {
+//         alert("正解！（正解は選択肢にありませんでした）");
+//         correctQuestions++;
+//     }
+//     setNewQuestion();
+// }
+
+
 function checkAnswer(selected) {
+    const popup = document.getElementById("popupOverlay");
+    const popupMessage = document.getElementById("popupMessage");
+    // ← ポップアップ内にメッセージ要素を用意しておく
+
+    // まず選択肢に正解が含まれていない場合
     if (!isAnswerIncluded) {
-        alert(`不正解！ 今回の正解は選択肢にありませんでした。\n正解: ${correctAnswer}`);
-    } else if (selected === correctAnswer) {
-        alert("正解！");
-        correctQuestions++;
-    } else {
-        alert(`不正解！ 正解は「${correctAnswer}」でした。`);
+        popupMessage.textContent = `今回の正解は選択肢にありませんでした。\n正解: 「${correctAnswer}」`;
+        popup.style.display = "flex";
+        return; // ← ここで終了
     }
-    setNewQuestion();
+
+    // 正解のとき
+    if (selected === correctAnswer) {
+        correctQuestions++;
+        setNewQuestion(); // 正解ならすぐ次へ
+        return;
+    }
+
+    // 不正解（選択肢内にあるが間違い）
+    popupMessage.textContent = `正解は「${correctAnswer}」でした。`;
+    popup.style.display = "flex";
 }
 
 function checkNoneButton() {
+    const popup = document.getElementById("popupOverlay");
+    const popupMessage = document.getElementById("popupMessage");
+
+    // 不正解の場合
     if (isAnswerIncluded) {
-        alert(`不正解！ 正解は「${correctAnswer}」でした。`);
-    } else {
-        alert("正解！（正解は選択肢にありませんでした）");
-        correctQuestions++;
+        popupMessage.textContent = `今回の正解は選択肢にありませんでした。\n正解: 「${correctAnswer}」`;
+        popup.style.display = "flex";
+        return; // ← ここで終了
     }
+
+    // 正解の場合
+    correctQuestions++;
     setNewQuestion();
 }
+

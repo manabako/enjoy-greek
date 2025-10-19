@@ -15,8 +15,10 @@
   </head>
   <body>
     <header>
-        <a href="../../index.html">TOP</a>
-        <a href="./index.html">戻る</a>
+        <div class="nav-links">
+          <a href="../../index.html">TOP</a>
+          <a href="./index.html">戻る</a>
+        </div>
     </header>
     <main>
         <div class="main-area">
@@ -29,6 +31,16 @@
                 <button>Option 4</button>
                 <button>Option 5</button>
             </div>
+        </div>
+        <!-- ポップアップ -->
+        <div id="popupOverlay" class="popup-overlay">
+          <div class="popup" id="popup">
+            <div id="popupContainer">
+              <h3>不正解！</h3>
+              <p id="popupMessage"></p>
+            </div>
+            <button id="closeBtn">閉じる</button>
+          </div>
         </div>
     </main>
     <footer>

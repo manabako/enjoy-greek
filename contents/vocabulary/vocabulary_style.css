@@ -18,7 +18,8 @@ details ul {
 /* 問題表示部分 */
 .question {
     font-size: 3rem;
-    margin: 5rem;
+    margin: 4rem 0;
+    text-align: center;
 }
 
 /* ボタンの共通スタイル */
@@ -59,6 +60,42 @@ details ul {
     justify-self: center;
 } */
 
+/* ポップアップ関連の設定 */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+
+.popup button {
+  margin: 0;
+  padding: 0.5rem 2rem;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+}
+
+#popupMessage {
+  white-space: pre-line;
+}
+
 /* 幅670px以下の場合（縦並び） */
 @media (max-width: 670px) {
     /* .answers {
@@ -66,5 +103,10 @@ details ul {
     } */
     .answers button {
     width: 100%;
+    }
+    .question {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        text-align: center;
     }
 }
