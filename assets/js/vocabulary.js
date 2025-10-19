@@ -53,7 +53,7 @@ function setNewQuestion() {
     document.querySelector(".question").textContent = questionItem.lemma;
 
     // 今回、正解を含めるかどうかをランダムに決定（30%の確率で含まれない）
-    isAnswerIncluded = Math.random() < 0.3;
+    isAnswerIncluded = Math.random() < 0.7;
 
     let options = [];
     if (isAnswerIncluded) {
@@ -142,7 +142,7 @@ function checkNoneButton() {
 
     // 不正解の場合
     if (isAnswerIncluded) {
-        popupMessage.textContent = `今回の正解は選択肢にありませんでした。\n正解: 「${correctAnswer}」`;
+        popupMessage.textContent = `正解は「${correctAnswer}」でした。`;
         popup.style.display = "flex";
         return; // ← ここで終了
     }
