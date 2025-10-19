@@ -66,6 +66,10 @@
     font-weight: bold;
 }
 
+.card ul {
+    list-style: none;
+}
+
 .ok-check {
     margin: 2rem 0 0 0;    
 }
